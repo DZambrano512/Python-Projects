@@ -1,0 +1,10 @@
+#declare our variables
+COST_PER_GALLON = 6.00
+m = float(input("Enter miles planned to travel: "))
+mpg = int(input("Enter the vehicles miles per gallon: "))
+
+#formula to calculate fuel costs
+feulCosts = m/mpg * COST_PER_GALLON
+
+#print output includes: miles, miles per gallon, price rate, and expected feul costs
+print(f"\nWith {m:.0f} miles needed to travel, \nin a {mpg:.0f} miles per gallon vehicle. \nAt the current price rate of: ${COST_PER_GALLON:.2f} per gallon\n\nExpect to spend: ${feulCosts:.2f}\n")
